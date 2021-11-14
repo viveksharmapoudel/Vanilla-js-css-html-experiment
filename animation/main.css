@@ -1,0 +1,16 @@
+body {
+	/* margin: 100px; */
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	background: skyblue;
+	transition-duration: 1s;
+	transition-property: background, transform;
+}
+
+.box:hover {
+	/* background: tomato; */
+	transform: rotate(45deg);
+}

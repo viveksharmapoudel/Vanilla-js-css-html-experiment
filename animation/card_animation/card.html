@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="card.css" />
+	</head>
+	<body>
+		<div class="card">
+			<div class="imgwrapper" id="imageid">
+				<img
+					src="https://images.unsplash.com/photo-1634281779549-8623765616b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNjg4MTU3NA&ixlib=rb-1.2.1&q=80&w=1080"
+					alt=""
+				/>
+			</div>
+			<div class="more--info" id="moreinfo" onclick="addClass()">
+				More information
+			</div>
+			<div class="less--info" id="lessinfo" onclick="addClass2()">
+				Less information
+			</div>
+
+			<script>
+				const btn = document.querySelector("#imageid");
+
+				const addClass = () => {
+					btn.classList.remove("on--click--less--info");
+					btn.classList.add("on--click--more--info");
+				};
+
+				const addClass2 = () => {
+					btn.classList.remove("on--click--more--info");
+					btn.classList.add("on--click--less--info");
+				};
+			</script>
+		</div>
+	</body>
+	<script></script>
+</html>
